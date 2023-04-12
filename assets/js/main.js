@@ -33,13 +33,15 @@ const team = [
 
 let members = document.querySelector('#members')
 
+// team.length per non avere ciclo infinito
 for (let i = 0; i < team.length; i++){
     let component = team[i];
     members.innerHTML += 
-    `<div class="card">
+
+    `<div class="card mb-5 pb-3">
         <img src="./assets/img/${team[i].image}" alt="">
         <div class="details">
-            <h2>${team[i].name}</h2>
+            <h2 class="mt-3">${team[i].name}</h2>
             <span>${team[i].role}</span>
         </div>
     </div>`;

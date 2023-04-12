@@ -6,4 +6,21 @@
 
 body{
     background-color: rgb(245, 245, 241);
+    height: 100vh;
+    width: 100%;
+}
+
+main{
+    width: 80%;
+    margin: auto;
+}
+
+#members{
+    margin: auto;
+}
+
+.card{
+    width: calc(100% / 3 - 20px);
+    padding: 0;
+    border: none;
 }
