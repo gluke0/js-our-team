@@ -31,5 +31,21 @@ const team = [
     },
   ];
 
-const members = document.querySelector('#members')
-console.log(members)
+let members = document.querySelector('#members')
+
+for (let i = 0; i < team.length; i++){
+    let component = team[i];
+    members.innerHTML += 
+    `<div class="card">
+        <img src="./assets/img/${team[i].image}" alt="">
+        <div class="details">
+            <h2>${team[i].name}</h2>
+            <span>${team[i].role}</span>
+        </div>
+    </div>`;
+
+    for (let key in component){
+        console.log(key);
+        console.log(component[key])
+    }
+}
